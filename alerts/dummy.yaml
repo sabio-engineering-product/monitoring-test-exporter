@@ -1,0 +1,12 @@
+groups:
+  - name: pulse
+    rules:
+      - alert: Dummy
+        expr: vector(0) == 1
+        for: 15m
+        labels:
+          severity: info
+        annotations:
+          dashboard: "d/ummy"
+          summary: "Dummy"
+          description: "Dummy"
